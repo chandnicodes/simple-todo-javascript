@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="todoWrap">
+        <h2>To-do List</h2>
+        <input type="text" placeholder="Add new task" class="main-input">
+        <button type="button" id="addTodoTask">Add</button>
+        <div id="taskLists"></div>
+    </div>
+    
+    <script type="text/javascript">
+        document.querySelector("#addTodoTask").onclick = function () {
+            if (document.querySelector("#todoWrap input").value.length == 0) {
+                alert('please add a task')
+            }
+            else {
+
+                // add the todo list items 
+                document.querySelector("#taskLists").innerHTML += `<div>` + document.querySelector("#todoWrap input").value + `<button type="button" class="deleteItem">Del</button></div>`
+                // delete the todo list items
+                document.querySelector("#todoWrap input").value = ''
+                let deleteItems = document.querySelectorAll('.deleteItem');
+                for (i = 0; i < deleteItems.length; i++) {
+                    deleteItems[i].onclick = function () {
+                        this.parentNode.remove()
+                    }
+                }
+            }
+        };
+
+    </script>
+</body>
+
+</html>

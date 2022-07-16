@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#todoWrap {
+    width: 380px;
+    margin: 16px auto;
+    padding: 10px;
+    border: 1px solid #858585;
+    border-radius: 7px;
+    text-align: center;
+    min-height: 500px;
+}
+
+.main-input {
+    margin: 10px 0;
+    padding: 5px 10px;
+    width: 83%;
+    min-height: 32px;
+    background-color:#ffffff;
+    border: 1px solid #989898;
+    border-radius: 4px;
+    outline: 0;
+
+}
+#addTodoTask {
+    background: #01db5c;
+    color: #000000;
+    padding: 6px;
+    border-radius: 4px;
+    border: 0;
+    font-weight: 700;
+}
+#taskLists {
+    width: 340px;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+ 
+}
+
+.deleteItem {
+    background: #ff0000;
+    color: #ffffff;
+    margin: 9px 14px 0;
+    padding: 5px;
+    border-radius: 4px;
+    border: 0;
+}
+
+#taskLists>div {
+    font-size: 20px;
+    font-weight: 700;  
+}
