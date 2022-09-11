@@ -1,1 +1,1 @@
-# simple-toto-javascript
+# simple-todo-javascript
